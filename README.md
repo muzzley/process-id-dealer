@@ -40,13 +40,17 @@ Using the default configuration, ids are dealt with the following request proper
     * `namespace`: A string identifier of the requesting app. This allows multiple types of apps to have independently dealt ids.
     * `id`: The requesting process's `pid`.
 
-Here's an example URL:
+### Generic way
+
+You can request an id by visiting the server's URL, for example:
 
     http://localhost:4002/process-id/deal?namespace=com.example.app&pid=1234
 
-And here's the corresponding CURL command:
+And here's the corresponding cURL command:
 
     curl -i -X GET "http://localhost:4002/process-id/deal?namespace=com.example.app&pid=1234"
+
+### From a Node.js app
 
 This project also provides a client library for Node.js apps. You're welcome. The following code illustrates how you can request an id directly from your Node.js app.
 
@@ -72,5 +76,3 @@ Then, use it like this:
       }
       // Successful request. `id` is the dealt identifer.
     });
-
-
