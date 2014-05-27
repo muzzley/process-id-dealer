@@ -17,18 +17,14 @@ config.production = {
     baseUri: process.env.PROCESS_ID_DEALER_SERVER_BASE_URI || '/process-id/',
   },
   logger: {
-    console: parseBoolean(process.env.PROCESS_ID_DEALER_LOG_CONSOLE, false),
     level: process.env.PROCESS_ID_DEALER_LOG_LEVEL || 'info',
-    filename: process.env.PROCESS_ID_DEALER_LOG_AGGREGATE || '/var/log/process-id-dealer/process-id-dealer.json.log'
+    console: parseBoolean(process.env.PROCESS_ID_DEALER_LOG_CONSOLE, true),
+    json: parseBoolean(process.env.PROCESS_ID_DEALER_LOG_JSON, false),
+    filename: process.env.PROCESS_ID_DEALER_LOG_AGGREGATE || 'process-id-dealer.json.log'
   }
 };
 
 config.development = JSON.parse(JSON.stringify(config.production));
-
-config.development.logger = {
-  console: parseBoolean(process.env.PROCESS_ID_DEALER_LOG_CONSOLE, true),
-  level: process.env.PROCESS_ID_DEALER_LOG_LEVEL || 'debug',
-  filename: process.env.PROCESS_ID_DEALER_LOG_AGGREGATE || 'process-id-dealer.json.log'
-};
+config.development.logger.level = process.env.PROCESS_ID_DEALER_LOG_LEVEL || 'debug';
 
 exports = module.exports = config[process.env.NODE_ENV] || config['production'];
