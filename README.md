@@ -4,6 +4,8 @@ This project deals unique, sequential, reusable and contextual identifiers for p
 
 If you're running multiple instances of the same application and need to associate a small and reusable identifier, you've come to the right place.
 
+Why not simply use `pid`s? Because `pid`s are too volatile for our use case.
+
 Let's consider an example:
 
 * The first, second and third instances get ids 0, 1 and 2, respectively.
@@ -25,6 +27,8 @@ The server can be configured. Have a look at the `config.js` file. You can chang
     PROCESS_ID_DEALER_SERVER_PORT=5000 node server.js
 
 **As the ids are dealt based on the original `pid`s of the requesting applications and recycled when old `pid`s die, it's necessary to run an instance of this server on each machine**.
+
+If the server dies or is restarted, the dealt ids are maintained since we're using LevelDB for storage.
 
 ## Requesting an id
 
@@ -68,4 +72,5 @@ Then, use it like this:
       }
       // Successful request. `id` is the dealt identifer.
     });
+
 
