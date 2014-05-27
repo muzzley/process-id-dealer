@@ -17,5 +17,9 @@
     "ps-node": "0.0.3",
     "request": "^2.35.0",
     "winston": "^0.7.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "muzzley-grunt-commons": "git+ssh://git@bitbucket.org:muzzley/muzzley-grunt-commons.git#master"
   }
 }

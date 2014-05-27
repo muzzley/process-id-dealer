@@ -2,6 +2,7 @@ dump.rdb
 .DS_Store
 /nbproject/private/
 /node_modules/
+/dealer-db/
 
 lib-cov
 *.seed
