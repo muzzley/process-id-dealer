@@ -24,7 +24,7 @@ The server can be configured. Have a look at the `config.js` file. You can chang
 
     PROCESS_ID_DEALER_SERVER_PORT=5000 node server.js
 
-**As the ids are dealt based on the original `pid`s of the requesting applications and recycled when old `pids` die, it is necessary to run an instance of this server on each machine**.
+**As the ids are dealt based on the original `pid`s of the requesting applications and recycled when old `pid`s die, it's necessary to run an instance of this server on each machine**.
 
 ## Requesting an id
 
