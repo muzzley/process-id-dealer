@@ -42,7 +42,7 @@ Here's an example URL:
 
 And here's the corresponding CURL command:
 
-    curl -i X "http://localhost:4002/process-id/deal?namespace=com.example.app&pid=1234"
+    curl -i -X GET "http://localhost:4002/process-id/deal?namespace=com.example.app&pid=1234"
 
 This project also provides a client library for Node.js apps. You're welcome. The following code illustrates how you can request an id directly from your Node.js app.
 
