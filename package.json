@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified. Sorry about that.\" && exit 1"
   },
-  "author": "Tiago Alves",
+  "author": "Tiago Alves <tiago.alves@muzzley.com>",
+  "repository": "git://github.com/muzzley/process-id-dealer",
   "license": "ISC",
   "dependencies": {
     "hapi": "^4.1.4",
