@@ -1,0 +1,21 @@
+{
+  "name": "process-id-dealer",
+  "version": "0.1.0",
+  "description": "An application that deals unique, sequential, re-usable and contextual identifiers for per application types.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified. Sorry about that.\" && exit 1"
+  },
+  "author": "Tiago Alves",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^4.1.4",
+    "is-running": "^1.0.5",
+    "joi": "^3.1.0",
+    "leveldown": "^0.10.2",
+    "levelup": "^0.18.3",
+    "ps-node": "0.0.3",
+    "request": "^2.35.0",
+    "winston": "^0.7.3"
+  }
+}
