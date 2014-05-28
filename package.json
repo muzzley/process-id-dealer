@@ -21,6 +21,6 @@
   },
   "devDependencies": {
     "grunt": "^0.4.2",
-    "muzzley-grunt-commons": "git+ssh://git@bitbucket.org:muzzley/muzzley-grunt-commons.git#master"
+    "muzzley-grunt-commons": "git+https://github.com/muzzley/grunt-commons.git#master"
   }
 }
