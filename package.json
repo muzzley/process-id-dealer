@@ -1,6 +1,6 @@
 {
   "name": "process-id-dealer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An application that deals unique, sequential, re-usable and contextual identifiers for processes running on a machine.",
   "main": "index.js",
   "scripts": {
