@@ -1,0 +1,11 @@
+# Copy this file to /etc/logrotate.d/process-id-dealer
+
+/var/log/process-id-dealer/*.log {
+  weekly
+  missingok
+  rotate 5
+  compress
+  delaycompress
+  notifempty
+  copytruncate
+}
