@@ -50,6 +50,10 @@ And here's the corresponding cURL command:
 
     curl -i -X GET "http://localhost:4002/process-id/deal?namespace=com.example.app&pid=1234"
 
+The response is a JSON string as shown below. In this case, we were dealt id `0`.
+
+    {"statusCode":200,"id":0}
+
 ### From a Node.js app
 
 This project also provides a client library for Node.js apps. You're welcome. The following code illustrates how you can request an id directly from your Node.js app.
